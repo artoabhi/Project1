@@ -90,7 +90,7 @@ header > .hero-section {
   display: flex;
   align-items: center;
   position: relative;
-  background-image: url(./images/hero-image.png);
+  background-image: url(./hero-image.png);
   background-size: cover;
 }
 header > .hero-section > .hero-section-content {
