@@ -6,7 +6,7 @@
     <title>
       Velvet Guard Sanitary Pads | Ultra-Soft, Rash-Free & Safe Protection
     </title>
-    <link rel="icon" type="image/x-icon" href="./images/logo.png" >
+    <link rel="icon" type="image/x-icon" href="./logo.png" >
     <link rel="stylesheet" href="./styles.css" >
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -28,10 +28,19 @@
             <li><a href="#about-us">About Us</a></li>
             <li><a href="#product">Product</a></li>
             <li><a href="#benefits">Benefits</a></li>
-            <li><a href="#faq">FAQ</a></li>
-            <li><a href="#contact-us">Contact Us</a></li>
+            <li><a href="#faq" id="open-faq">FAQ</a></li>
+            <li><a href="#contact-us" id="open-support">Contact Us</a></li>
+            
           </ul>
-          
+           <div class="hamburger" onclick="openNav()">☰</div>
+    </nav>
+    <div class="side-nav" id="sideNav">
+        <div class="close-btn" onclick="closeNav()">✖</div>
+        <a href="#about-us">About Us</a>
+        <a href="#product">Product</a>
+        <a href="#benefits">Benefits</a>
+        <a href="#faq" id="open-faq">FAQ</a>
+        <a href="#contact-us" id="open-support">Contact Us</a>
         </div>
 
       </nav>
@@ -60,7 +69,9 @@
         </p>
       </div>
       <div class="banner-container">
-        <img src="./bannner1.jpg" alt="product-image" >
+       <img src="./banner1.jpg" 
+     
+     alt="product-image">
       </div>
 
       <div class="feature-cards">
@@ -297,8 +308,10 @@
           </li>
         </ul>
       </div>
-      <div class="title"><p id="story">Our Story</p></div>
+      <div class="about-us-cards">
+      
       <div class="story-container">
+        <p id="story">Our Story</p>
       <div class="story-content">
         <p>Welcome to our story of compassion and change!</p>
         <p>At Velvet Guard, our journey began with a heartfelt mission to turn compassion into action. Driven by a deep-seated desire to make a difference in the world, we started our biodegradable sanitary pad business with a unique purpose - to help those in need while caring for our planet.</p>
@@ -306,22 +319,24 @@
         <p>With empathy as our guiding light and innovation as our tool for progress, we invite you to be a part of this journey. Together, we can weave a tapestry of care, sustainability, and humanity that brings comfort to the body and warmth to the soul. Let's transform lives, one biodegradable pad at a time, and write a story of compassion that inspires us all.</p>
       </div>
       </div>
-      <div class="title"><p id="mission">Our Mission</p></div>
+      
       <div class="mission-container">
+        <p id="mission">Our Mission</p>
       <div class="mission-content">
         <p>At Velvet Guard, our mission beats with a rhythm of change and compassion. It's a small but significant step towards a future where every choice we make is a testament to our love for the earth and each other.</p>
         <p>Beyond the realm of eco-friendly products, our mission extends to the hearts of those in need. By choosing our biodegradable pads, you are not just investing in your own health; you are also extending a hand of support to communities that deserve care and dignity. Together, we can turn compassion into action and dreams into reality.</p>
       </div></div>
 
-      <div class="title"><p id="vision">Our Vision</p></div>
+      
       <div class="vision-container">
+        <p id="vision">Our Vision</p>
       <div class="vision-content">
         <p>At Velvet Guard, our vision is painted with the colors of compassion, woven with threads of resilience, and embroidered with the seeds of a sustainable future. We dream of a world where every woman is embraced by the nurturing touch of nature, where every choice we make echoes with the harmony of our planet's heartbeat.</p>
         <p>In the tapestry of our vision, each biodegradable pad is a brushstroke of healing, a melody of unity, and a whisper of hope. We strive to create a sanctuary where personal well-being and environmental stewardship dance in perfect synchrony, a sanctuary where every woman feels empowered, supported, and cherished.</p>
         <p>Our vision is not just a distant dream but a tangible promise of tomorrow. It is a promise to uphold the beauty of our Earth, to honor the resilience of women everywhere, and to cultivate a legacy of love and sustainability for generations to come.</p>
       </div>
       </div>
-
+      </div>
       <div class="title"><p id="impact" >Impact</p></div>
       <div class="impact-container" id="benefits">
       <div class="impact-points">
@@ -379,35 +394,160 @@
 
        
     
-       <div class="faq-container" id="faq">
-        <h2>Frequently Asked Questions (FAQs)</h2>
-        <div class="faq-item">
-            <p class="faq-question">1. What are organic sanitary pads?</p>
-            <p>Organic sanitary pads are made from natural, biodegradable materials like organic cotton and plant-based fibers. They are free from harmful chemicals, chlorine, fragrances, and synthetic materials, making them safer for both your body and the environment.</p>
+       <section id="faq-container">
+        <div class="faq-content">
+            <button id="close-faq">&times;</button>
+            <h2>Frequently Asked Questions (FAQs)</h2>
+            <div class="faq-item">
+                <p class="faq-question">1. What are organic sanitary pads?</p>
+                <p>Organic sanitary pads are made from natural, biodegradable materials like organic cotton and plant-based fibers. They are free from harmful chemicals, chlorine, fragrances, and synthetic materials, making them safer for both your body and the environment.</p>
+            </div>
+            <div class="faq-item">
+                <p class="faq-question">2. What is an anion chip and how does it work?</p>
+                <p>An anion chip is a special layer infused within the sanitary pad. It releases negative ions (anions) when activated by moisture and heat. These ions help inhibit bacterial growth, control odor naturally, balance pH levels, and provide added comfort during menstruation.</p>
+            </div>
+            <div class="faq-item">
+                <p class="faq-question">3. Are Velvet Guard pads completely biodegradable?</p>
+                <p>Yes! Velvet Guard pads are made with biodegradable materials that break down naturally after disposal, leaving minimal environmental impact.</p>
+            </div>
+            <div class="faq-item">
+                <p class="faq-question">4. How is Velvet Guard different from regular sanitary pads?</p>
+                <p>Velvet Guard pads combine organic, biodegradable materials with advanced anion chip technology. They are toxin-free, chlorine-free, and compostable—designed to offer superior protection while being gentle on both your body and the planet.</p>
+            </div>
+            <div class="faq-item">
+                <p class="faq-question">5. Will the anion chip cause any irritation or side effects?</p>
+                <p>No. The anion chip is made from safe, natural materials and contains no harmful chemicals. It is designed to reduce irritation, prevent rashes, and improve overall menstrual hygiene.</p>
+            </div>
+            <div class="faq-item">
+                <p class="faq-question">6. Can I try Velvet Guard pads before committing to a full pack?</p>
+                <p>Absolutely! We offer convenient trial packs so you can experience the comfort, protection, and eco-friendly benefits before purchasing a full pack.</p>
+            </div>
         </div>
-        <div class="faq-item">
-            <p class="faq-question">2. What is an anion chip and how does it work?</p>
-            <p>An anion chip is a special layer infused within the sanitary pad. It releases negative ions (anions) when activated by moisture and heat. These ions help inhibit bacterial growth, control odor naturally, balance pH levels, and provide added comfort during menstruation.</p>
-        </div>
-        <div class="faq-item">
-            <p class="faq-question">3. Are Velvet Guard pads completely biodegradable?</p>
-            <p>Yes! Velvet Guard pads are made with biodegradable materials that break down naturally after disposal, leaving minimal environmental impact.</p>
-        </div>
-        <div class="faq-item">
-            <p class="faq-question">4. How is Velvet Guard different from regular sanitary pads?</p>
-            <p>Velvet Guard pads combine organic, biodegradable materials with advanced anion chip technology. They are toxin-free, chlorine-free, and compostable—designed to offer superior protection while being gentle on both your body and the planet.</p>
-        </div>
-        <div class="faq-item">
-            <p class="faq-question">5. Will the anion chip cause any irritation or side effects?</p>
-            <p>No. The anion chip is made from safe, natural materials and contains no harmful chemicals. It is designed to reduce irritation, prevent rashes, and improve overall menstrual hygiene.</p>
-        </div>
-        <div class="faq-item">
-            <p class="faq-question">6. Can I try Velvet Guard pads before committing to a full pack?</p>
-            <p>Absolutely! We offer convenient trial packs so you can experience the comfort, protection, and eco-friendly benefits before purchasing a full pack.</p>
-        </div>
-    </div>
     </section>
-    
+    </section>
+    <section>
+  <div class="privacy-container" id="privacy">
+    <button class="privacy-close-btn" id="close-privacy">&times;</button>
+    <h2>Privacy Policy</h2>
+    <div class="privacy-content">
+      <p><strong>Effective Date: 05-04-2025</strong></p>
+      <p>
+        At Velvet Guard, your privacy is of utmost importance to us. This Privacy Policy explains how we collect, use, protect, and handle your personal information when you visit our website or use our services.
+      </p>
+      <h3>1. Information We Collect</h3>
+      <p>
+        • Personal Information: Name, email address, phone number, shipping address, billing details, or any other information you provide when making a purchase or contacting us.
+      </p>
+      <p>
+        • Non-Personal Information: Browser type, IP address, device information, pages visited, and other analytical data collected through cookies or similar technologies.
+      </p>
+      <h3>2. How We Use Your Information</h3>
+      <p>We use the information collected to:</p>
+      <p>• Process and fulfill your orders.</p>
+      <p>• Respond to your inquiries and provide customer support.</p>
+      <p>• Improve our website and services.</p>
+      <p>• Send promotional emails or newsletters (only if you opt-in).</p>
+      <p>• Comply with legal obligations.</p>
+      <h3>3. Cookies</h3>
+      <p>
+        Our website uses cookies to enhance your browsing experience. You can choose to disable cookies through your browser settings, though this may affect some features of our website.
+      </p>
+      <h3>4. Third-Party Disclosure</h3>
+      <p>
+        We do not sell, trade, or transfer your personal information to outside parties except trusted third parties who assist in operating our website, conducting business, or servicing you, provided they agree to keep your information confidential.
+      </p>
+      <h3>5. Data Security</h3>
+      <p>
+        We implement industry-standard security measures to protect your personal information against unauthorized access, alteration, disclosure, or destruction.
+      </p>
+      <h3>6. Your Rights</h3>
+      <p>You have the right to:</p>
+      <p>• Access or update your personal information.</p>
+      <p>• Request deletion of your data.</p>
+      <p>• Opt out of marketing communications.</p>
+      <p>To exercise these rights, please contact us at <strong>Velvetguard.org@gmail.com</strong>.</p>
+      <h3>7. Changes to This Policy</h3>
+      <p>
+        We may update our Privacy Policy periodically. Any changes will be posted on this page with an updated effective date.
+      </p>
+      <h3>8. Contact Us</h3>
+      <p>
+        If you have any questions about this Privacy Policy, please contact us at:
+      </p>
+      <p><strong>Velvet Guard</strong></p>
+      <p><strong>Mail Id:</strong> Velvetguard.org@gmail.com</p>
+      <p><strong>Call:</strong> +919599363505</p>
+    </div>
+  </div>
+</section>
+<section>
+  <div class="terms-container" id="terms">
+    <button class="terms-close-btn" id="close-terms">&times;</button>
+    <h2>Terms & Conditions</h2>
+    <div class="terms-content">
+      <p><strong>Effective Date: 05-04-2025</strong></p>
+      <p>
+        Welcome to Velvet Guard. By accessing and using our website (<strong>www.velvetguard.in</strong>), and purchasing our biodegradable sanitary products, you agree to abide by the following Terms & Conditions. Please read them carefully before making any purchase.
+      </p>
+      <h3>1. Use of Website</h3>
+      <p>By using our website, you confirm that:</p>
+      <p>• You are at least 18 years old or are accessing the site under the supervision of a parent or guardian.</p>
+      <p>• You will use the website only for lawful purposes.</p>
+      <p>• You will not misuse, tamper, hack, or disrupt the functionality of the website.</p>
+      <h3>2. Product Information</h3>
+      <p>We strive to ensure all information regarding our products, including descriptions, pricing, and availability, is accurate and up-to-date. However:</p>
+      <p>• All product images are for illustrative purposes only.</p>
+      <p>• Packaging or product appearance may vary slightly based on batch production.</p>
+      <p>• Velvet Guard reserves the right to modify product information, pricing, or discontinue products without prior notice.</p>
+      <h3>3. Orders & Payment</h3>
+      <p>• By placing an order, you agree that all information provided is true, accurate, and complete.</p>
+      <p>• Full payment is required at the time of purchase via our supported payment methods: [Insert Payment Methods].</p>
+      <p>• Velvet Guard reserves the right to refuse or cancel any order for reasons including product unavailability, payment issues, or suspected fraudulent activity.</p>
+      <h3>4. Shipping & Delivery</h3>
+      <p>• Orders are processed within 7-8 Days.</p>
+      <p>• Delivery times vary by location and are estimated during checkout.</p>
+      <p>• Velvet Guard is not liable for delays caused by courier services or external factors.</p>
+      <p>• Shipping charges (if any) are non-refundable.</p>
+      <h3>5. No Return & No Refund Policy</h3>
+      <p>Due to the nature and hygiene standards of our products, ALL SALES ARE FINAL.</p>
+      <p>• No Returns: We do not accept returns on any products once they are sold and delivered.</p>
+      <p>• No Refunds: We do not offer refunds or exchanges, except in the rare case of damaged or incorrect items received.</p>
+      <p>• Damaged/Incorrect Products: In such cases, customers must contact us within 48 hours of receiving the order, providing clear photos of the product and packaging.</p>
+      <h3>6. Intellectual Property Rights</h3>
+      <p>All content on this website, including but not limited to logos, product designs, text, graphics, images, and software, is the property of Velvet Guard. Unauthorized use, reproduction, or distribution is prohibited.</p>
+      <h3>7. Limitation of Liability</h3>
+      <p>Velvet Guard shall not be held liable for:</p>
+      <p>• Any indirect, incidental, special, or consequential damages.</p>
+      <p>• Any allergic reactions, health issues, or damages resulting from the misuse of products.</p>
+      <p>Users are responsible for reading product ingredients and instructions before use.</p>
+      <h3>8. Third-Party Links</h3>
+      <p>Our website may contain links to third-party websites. Velvet Guard does not control or endorse the content of these sites and is not responsible for their privacy practices or policies.</p>
+      <h3>9. Governing Law</h3>
+      <p>These Terms & Conditions are governed by the laws of [INDIA/Delhi]. Any disputes arising under these terms shall be subject to the exclusive jurisdiction of the courts located in Delhi.</p>
+      <h3>10. Changes to Terms</h3>
+      <p>We reserve the right to modify or update these Terms & Conditions at any time without prior notice. Changes will take effect immediately upon being posted on the website.</p>
+      <h3>11. Contact Information</h3>
+      <p><strong>Velvet Guard</strong></p>
+      <p><strong>Mail Id:</strong> Velvetguard.org@gmail.com</p>
+      <p><strong>Call:</strong> +919599363505</p>
+    </div>
+  </div>
+</section>
+
+    <section>
+  <div class="support-container" id="support">
+    <button class="support-close-btn" id="close-support">&times;</button>
+    <h2>Support</h2>
+    <div class="support-content">
+      <p><strong>Still Have Questions? Reach Out to Us!</strong></p>
+      <p>175, Near Yadav Chaupal, Bhalaswa, N.S.Mandi, Delhi - 110033, INDIA</p>
+      <p><strong>Mail Id:</strong> Velvetguard.org@gmail.com</p>
+      <p><strong>Call:</strong> +919599363505</p>
+      <p>We’re here to help you make the switch to a healthier, eco-friendly period.</p>
+    </div>
+  </div>
+</section>
+
 <footer class="footer">
   <div class="footer-container">
     <div class="footer-logo">
@@ -424,29 +564,27 @@
 
     <div class="footer-links">
       <h3>Product</h3>
-      <ul>
-        <li><a href="#story">Story</a></li>
-        <li><a href="#mission">Mission</a></li>
-        <li><a href="#vision">Vision</a></li>
-        <li><a href="#impact">Impact</a></li>
-      </ul>
+      
     </div>
 
   
     <div class="footer-links">
       <h3>About Us</h3>
       <ul>
-        <li><a href="#privacy-policy">Privacy Policy</a></li>
-        <li><a href="#terms-&-condition">Terms & Conditions</a></li>
-        <li><a href="#contact-us">Contact Us</a></li>
+        <li><a href="#story">Story</a></li>
+        <li><a href="#mission">Mission</a></li>
+        <li><a href="#vision">Vision</a></li>
+        <li><a href="#impact">Impact</a></li>
       </ul>
+      
     </div>
 
     <div class="footer-links">
       <h3>Support</h3>
-      <ul>
-        <li><a href="#faq">FAQ</a></li>
-        <li><a href="#customer-support">Customer Support</a></li>
+     <ul>
+        <li><a href="#privacy-policy" id="open-privacy">Privacy Policy</a></li>
+        <li><a href="#terms-&-condition" id="open-terms">Terms & Conditions</a></li>
+        <li><a href="#contact-us" id="open-support">Contact Us</a></li>
       </ul>
     </div>
   </div>
